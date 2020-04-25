@@ -12,3 +12,11 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = 'Book'
+        verbose_name_plural = 'Books'
+        ordering = ['id']
+        indexes = [
+            models.Index(fields=['title'], name='idx_book_title'),
+            models.Index(fields=['publication_year'], name='idx_book_publication_year')
+            ]
