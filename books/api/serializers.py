@@ -20,11 +20,3 @@ class BookSerializer(ModelSerializer):
         """
         fields = ['id', 'title', 'edition', 'publication_year', 'author']
 
-class BookListSerializer(ModelSerializer):
-    """
-    Display the authors list
-    """
-    authors = AuthorSerializer(many=True)
-    class Meta:
-        model = Book
-        fields = "__all__"
