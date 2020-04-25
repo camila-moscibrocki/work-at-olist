@@ -1,15 +1,13 @@
-Books Database API project
-###Database created with Django as framework, Python API rest and heroku deploy
+# Books Database API project
+
+Database created with Django as framework, Python API rest and heroku deploy
+
+## Prerequisites
 
 This project runs in python 3.6 and Django 2.2.8
 
-###Project link
+### Project Link
 https://books-database00.herokuapp.com/
-###Admin credentials
+
+### Admin credentials
 User: Admin Password: Admin
-
-
-One Paragraph of project description goes here
-
-## Getting Started
-
