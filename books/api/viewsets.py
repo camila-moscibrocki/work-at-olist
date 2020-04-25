@@ -18,3 +18,4 @@ class BookViewSet(ModelViewSet):
     filter_backends = (SearchFilter, DjangoFilterBackend,)
     search_fields = ('id', 'title', 'publication_year')
     filter_fields = ('title', 'edition', 'publication_year', 'author')
+    lookup_field = 'title'

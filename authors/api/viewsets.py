@@ -18,3 +18,4 @@ class AuthorViewSet(ModelViewSet):
     filter_backends = (SearchFilter, DjangoFilterBackend,)
     search_fields = ('id', 'name')
     filter_fields = ('id', 'name')
+    lookup_field = 'name'
