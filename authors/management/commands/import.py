@@ -24,7 +24,7 @@ class Command(BaseCommand):
             except KeyError:
                 errors = True
         if errors:
-            self.stdout.write(self.style.ERROR('Please, insert "Name" column in CSV file'))
+            self.stdout.write(self.style.ERROR('Please, insert "name" column in CSV file'))
             return
         created = Author.objects.bulk_create(authors, ignore_conflicts=True)
         count = len(created)

@@ -2,7 +2,6 @@ from django.core.management import call_command
 from rest_framework.test import APITestCase
 from django.test import TestCase
 from .models import Author
-from books.models import Book
 
 import os
 
