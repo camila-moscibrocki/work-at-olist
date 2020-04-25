@@ -1,6 +1,6 @@
 # Books Database API project
 
-Database created with Django as framework, Python API rest and heroku deployment
+Database created with Django as framework, Django REST for Web API rest and heroku deployment
 
 ## Prerequisites
 
@@ -167,3 +167,9 @@ You can also check it at https://books-database00.herokuapp.com/Books/
     }
 ]
 ```
+
+## This project was built With
+
+* [Heroku](http://www.heroku.com) - The platform as a service (PaaS) used for deployment
+* [Django](https://www.djangoproject.com/) - Framework for web devlopment
+* [Django-Rest](https://www.django-rest-framework.org/) - for building Web API
