@@ -3,6 +3,6 @@ from django.core.wsgi import get_wsgi_application
 import os
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'book_database.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'book_db.settings')
 
 application = Cling(get_wsgi_application())

@@ -13,7 +13,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['authors-books-db.herokuapp.com', 'localhost:8000']
+ALLOWED_HOSTS = ['books-db1.herokuapp.com', 'localhost:8000']
 
 # Application definition
 
