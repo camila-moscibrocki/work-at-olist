@@ -2,7 +2,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import SearchFilter
 from books.models import Book
-from books.api.serializers import BookSerializer
+from books.api.serializers import BookSerializer, BookListSerializer
 
 
 class BookViewSet(ModelViewSet):
@@ -19,3 +19,8 @@ class BookViewSet(ModelViewSet):
     search_fields = ('id', 'title', 'publication_year')
     filter_fields = ('title', 'edition', 'publication_year', 'author')
     lookup_field = 'title'
+
+    def get_serializer_class(self):
+        if self.action in ['list', 'retrieve']:
+            return BookListSerializer
+        return BookSerializer

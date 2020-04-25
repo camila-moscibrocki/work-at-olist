@@ -1,4 +1,5 @@
 from books.models import Book
+from authors.models import Author
 from rest_framework.serializers import ModelSerializer
 from authors.api.serializers import AuthorSerializer
 
@@ -18,3 +19,12 @@ class BookSerializer(ModelSerializer):
         Indicates fields for application
         """
         fields = ['id', 'title', 'edition', 'publication_year', 'author']
+
+class BookListSerializer(serializers.ModelSerializer):
+    """
+    Display the authors list
+    """
+    authors = AuthorSerializer(many=True)
+    class Meta:
+        model = Book
+        fields = "__all__"

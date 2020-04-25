@@ -3,7 +3,6 @@ from authors.models import Author
 
 
 class Book(models.Model):
-
     title = models.CharField(max_length=150)
     edition = models.FloatField()
     publication_year = models.IntegerField()
@@ -19,4 +18,4 @@ class Book(models.Model):
         indexes = [
             models.Index(fields=['title'], name='idx_book_title'),
             models.Index(fields=['publication_year'], name='idx_book_publication_year')
-            ]
+        ]
