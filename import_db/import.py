@@ -28,6 +28,8 @@ class Command(BaseCommand):
             return
         created = Author.objects.bulk_create(authors, ignore_conflicts=True)
         count = len(created)
+        if not count:
+            self.stdout.write(self.style.WARNING('Author not inserted in the base, check registers'))
         self.stdout.write(
             self.style.SUCCESS(
                 f'Imported CSV file {count} '
