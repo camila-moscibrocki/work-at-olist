@@ -1,6 +1,6 @@
 # Books Database API project
 
-Database created with Django as framework, Python API rest and heroku deploy
+Database created with Django as framework, Python API rest and heroku deployment
 
 ## Prerequisites
 
@@ -56,4 +56,114 @@ python manage.py migrate
 You can manually run tests using the file "tests" located in books and authors directory or by using:
 ```
 $ python manage.py test
+```
+
+## Project details
+
+### Authors output data
+
+You can also check it at https://books-database00.herokuapp.com/authors/
+```
+[
+    {
+        "id": 1,
+        "name": "Luiz Henrique Hugria"
+    },
+    {
+        "id": 2,
+        "name": "Mauricio Samy Silva"
+    },
+    {
+        "id": 3,
+        "name": "Pablo Dall Oglio"
+    },
+    {
+        "id": 4,
+        "name": "Yehuda Katz"
+    },
+    {
+        "id": 5,
+        "name": "Bear Bibeault"
+    },
+    {
+        "id": 6,
+        "name": "Maurice Petyt"
+    },
+    {
+        "id": 7,
+        "name": "Harry Percival"
+    }
+]
+```
+
+### Books output data
+
+You can also check it at https://books-database00.herokuapp.com/Books/
+```
+[
+    {
+        "id": 1,
+        "title": "TDD com Python",
+        "edition": 2.0,
+        "publication_year": 2017,
+        "author": [
+            {
+                "id": 7,
+                "name": "Harry Percival"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Segurança Operacional de Trens de Carga",
+        "edition": 2.0,
+        "publication_year": 2018,
+        "author": [
+            {
+                "id": 1,
+                "name": "Luiz Henrique Hugria"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "JQuery em ação",
+        "edition": 2.0,
+        "publication_year": 2012,
+        "author": [
+            {
+                "id": 4,
+                "name": "Yehuda Katz"
+            },
+            {
+                "id": 5,
+                "name": "Bear Bibeault"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "PHP",
+        "edition": 3.0,
+        "publication_year": 2015,
+        "author": [
+            {
+                "id": 3,
+                "name": "Pablo Dall Oglio"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "HTML5",
+        "edition": 2.0,
+        "publication_year": 2011,
+        "author": [
+            {
+                "id": 2,
+                "name": "Mauricio Samy Silva"
+            }
+        ]
+    }
+]
 ```
