@@ -1,6 +1,6 @@
 # Books Database API project
 
-Database created with Django as framework, Django REST for Web API rest and heroku deployment
+Database created with Django as framework, Django REST for Web API rest and heroku deployment, where you can CRUD books and authors
 
 ## Prerequisites
 
