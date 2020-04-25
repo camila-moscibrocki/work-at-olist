@@ -95,7 +95,7 @@ You can also check it at https://books-database00.herokuapp.com/authors/
     }
 ]
 ```
-
+You can access the author's list clicking [here](https://books-database00.herokuapp.com/admin/authors/author/)
 ### Books output data
 
 You can also check it at https://books-database00.herokuapp.com/Books/
