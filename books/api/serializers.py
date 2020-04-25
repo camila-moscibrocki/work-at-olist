@@ -7,7 +7,6 @@ class BookSerializer(ModelSerializer):
     """
     Create a serializer for book's class using ModelSerializer and indicates the relationship between author's serializer (nested)
     """
-
     author = AuthorSerializer(many=True)
 
     class Meta:
