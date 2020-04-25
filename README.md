@@ -3,7 +3,5 @@
 
 This project runs in python 3.6 and Django 2.2.8
 
-<h4>Project link</h4>
-https://books-database00.herokuapp.com/
-<h4>Admin credentials</h4>
-User: Admin Password: Admin
+<h4>Project link</h4> https://books-database00.herokuapp.com/
+<h4>Admin credentials</h4> User: Admin Password: Admin
