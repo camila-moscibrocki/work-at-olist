@@ -20,7 +20,7 @@ class BookSerializer(ModelSerializer):
         """
         fields = ['id', 'title', 'edition', 'publication_year', 'author']
 
-class BookListSerializer(serializers.ModelSerializer):
+class BookListSerializer(ModelSerializer):
     """
     Display the authors list
     """
